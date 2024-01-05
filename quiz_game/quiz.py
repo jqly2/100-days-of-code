@@ -22,4 +22,7 @@ class Quiz:
             return score_sesssion.display(number)
         
     def new_question(self, number):
-        return input(f"Q.{number+1} {self.questions[number]["question"]} (True/False)?:")
+        return input(f"Q.{number+1} {self.questions[number]['question']} (True/False)?:")
+    
+    def final_score(self):
+        return f"{score_sesssion.final()}/{self.amount}"

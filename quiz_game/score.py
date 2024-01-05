@@ -7,3 +7,6 @@ class Score:
     
     def display(self, index):
         return print(f"Your current score is: {self.score}/{index+1}.")
+    
+    def final(self):
+        return self.score
